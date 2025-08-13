@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rural Education Platform</title>
+  <style>
+   body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+   }
+
+   header {
+    background: url('https://images.unsplash.com/photo-1509062522246-3755977927d7') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+   }
+
+   header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+   }
+
+   header p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+   }
+
+   nav {
+    display: flex;
+    justify-content: center;
+    background: #0077b6;
+    flex-wrap: wrap;
+   }
+
+   nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background 0.3s, opacity 0.3s;
+   }
+
+   nav a:hover {
+    background: #023e8a;
+    opacity: 0.9;
+   }
+
+   main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+   }
+
+   .card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+   }
+
+   .card:hover {
+    transform: translateY(-5px);
+   }
+
+   .card img {
+    width: 100%;
+    border-radius: 10px;
+   }
+
+   .course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+   }
+
+   .course {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+   }
+
+   .course:hover {
+    transform: scale(1.05);
+   }
+
+   .course img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+   }
+
+   button {
+    background: #ff6f00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, box-shadow 0.3s;
+   }
+
+   button:hover {
+    background: #e65100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+   }
+
+   footer {
+    background: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+   }
+  </style>
+ </head>
+
+ <body>
+
+  <header>
+   <h1>Rural Education Platform</h1>
+   <p>Empowering Rural Students with Online and Offline Learning Opportunities</p>
+  </header>
+
+  <nav>
+   <a href="#">Home</a>
+   <a href="#">Courses</a>
+   <a href="#">Teachers</a>
+   <a href="#">Resources</a>
+   <a href="#">Contact</a>
+  </nav>
+
+  <main>
+   <div class="card">
+    <h2>Welcome Student</h2>
+    <p>Our platform connects rural students with world-class education through interactive lessons, offline
+     access, and dedicated support.</p>
+    <button onclick="alert('Learn More Clicked!')">Learn More</button>
+   </div>
+
+   <h2 style="margin-top:40px;">Available Courses</h2>
+   <div class="course-list">
+    <div class="course">
+     <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      alt="Coding">
+     <h3>Coding Fundamentals</h3>
+    </div>
+    <div class="course">
+     <img src="https://images.unsplash.com/photo-1580982169321-36e1ad95adba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWdyaWN1bHR1cmFsJTIwc2NpZW5jZXxlbnwwfHwwfHx8MA%3D%3D"
+      alt="Agricultural Science">
+     <h3>Agricultural Science</h3>
+    </div>
+    <div class="course">
+     <img src="https://images.unsplash.com/photo-1542435503-956c469947f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w1MDcxMzJ8MHwxfHNlYXJjaHwxfHxwaHlzaWNzJTIwY2xhc3Nyb29tfGVufDB8fHx8MTY5NDQ4NjY2OXww&ixlib=rb-4.0.3&q=80&w=1080"
+      alt="Physics">
+     <h3>Physics - Grade 12</h3>
+    </div>
+    <div class="course">
+     <img src="https://plus.unsplash.com/premium_photo-1668383198516-1906bbdcfc1c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8QnVzaW5lc3MlMjBhbmQlMjBFbnRyZXByZW5ldXJzaGlwfGVufDB8fDB8fHww"
+      alt="Business Ethics">
+     <h3>Business and Entrepreneurship</h3>
+    </div>
+   </div>
+
+   <div class="card" style="margin-top:40px;">
+    <h2>Login</h2>
+    <form onsubmit="event.preventDefault(); alert('Login Submitted');">
+     <label>Email:</label><br>
+     <input type="email" required style="width:100%; padding:10px; margin:10px 0;"><br>
+     <label>Password:</label><br>
+     <input type="password" required style="width:100%; padding:10px; margin:10px 0;"><br>
+     <button type="submit">Login</button>
+    </form>
+   </div>
+  </main>
+
+  <footer>
+   &copy; 2025 Rural Education Initiative | All Rights Reserved
+  </footer>
+
+ </body>
+
+ </html>
